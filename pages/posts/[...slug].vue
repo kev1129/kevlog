@@ -1,30 +1,15 @@
 <template>
-    <div>
+    <v-container>
         <div>
-            <h1>{{ post.title }}</h1>
+            <PostTitle :title="post.title"/>
             <article>
-                <ContentRenderer v-bind:value="post" />
+                <ContentRenderer :value="post" />
             </article>
         </div>
-        <div>
-            <NuxtLink to="/">Home</NuxtLink>
-        </div>
-
-        <!--
-        <ContentDoc v-slot="{ doc }">
-            <article>
-                <h1>{{ doc.title }}</h1>
-                <ContentRenderer :value="doc" />
-            </article>
-        </ContentDoc>
-        -->
-    </div>
-
+    </v-container>
 </template>
 
 <script setup>
-
 const route = useRoute()
 const { data: post, error } = await useAsyncData(() => queryContent(route.params.slug).findOne())
-
 </script>
