@@ -1,17 +1,4 @@
 <template>
-    <!-- <div>
-        <ContentList v-slot="{ list }">
-            <div>
-                <NuxtLink v-for="article in list" :key="article._path" 
-                :to="article._path">
-                    <h2>{{ article.title }}</h2>
-                    <p>{{ article.description }}</p>
-                    <p>{{  article._path.slice(1) }}</p>
-                </NuxtLink>
-            </div>
-        </ContentList>
-    </div>
-    -->
     <v-main>
     
         <v-container>
