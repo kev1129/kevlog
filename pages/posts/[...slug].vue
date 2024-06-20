@@ -1,11 +1,9 @@
 <template>
-    <v-container>
-        <div>
-            <PostTitle :title="post.title"/>
-            <article>
-                <ContentRenderer :value="post" />
-            </article>
-        </div>
+    <v-container class="sectiond">
+        <PostTitle :title="post.title"/>
+        <article>
+            <ContentRenderer :value="post" />
+        </article>
     </v-container>
 </template>
 

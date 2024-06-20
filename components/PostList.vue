@@ -1,12 +1,12 @@
 <template>
-    <v-container class="justify-center">
-        <h1>posts list</h1>
-        <div v-for="value in postlist" :key="value._path" class="index">
+    <v-container class="section">
+        <SectionTitle sectiontitle="post list" />
+        <span v-for="value in props.postlist" :key="value._path" class="index-container">
+            <IndexMetainfo :indexvalue="value"/>
             <NuxtLink :to="value._path" class="index-link">
-                <span class="index-date">{{ value.date }}</span>
-                {{ value.title }}
+                <span class="index-title">{{ value.title }}</span>
             </NuxtLink>
-        </div>
+        </span>
     </v-container>
 </template>
 
@@ -17,13 +17,19 @@ const props = defineProps(['postlist'])
 
 
 <style lang="scss" scoped>
-.index {
-    .index-date {  
-    font-size: 0.8rem;
-    opacity: 0.8;
-    }
+.index-container {
+    display: block;
+    margin-bottom: 13.7px;
+
     .index-link {
+        display: block;
         font-size: 1rem;
+
+        .index-title {
+            display: inline-block;
+            padding: 0;
+            font-size: 1rem;
+        }
     }
 }
 </style>

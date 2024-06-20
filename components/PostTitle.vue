@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ props.title }}</h1>
+    <h1 class="post-title">{{ props.title }}</h1>
 </template>
 
 <script setup>
@@ -10,7 +10,9 @@ const props = defineProps(['title'])
 
 <style lang="scss" scoped>
 
-h1 {
+.post-title {
+    display: block;
+    margin-bottom: 30px;
     font-size: 1.34rem;
 }
 

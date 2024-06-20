@@ -1,11 +1,21 @@
 <template>
   <v-app>
     <AppHeader />
-        <div class="mx-auto">
+      <v-row>
+        <v-col xs="10" sm="9" md="7" lg="5" class="main-container">
           <v-main>
-          <slot></slot>
-        </v-main>
-        </div>
+            <slot></slot>
+          </v-main>
+        </v-col>
+      </v-row>
   </v-app>
 </template>
-  
+
+<style lang="scss" scoped>
+.main-container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4.9%;
+}
+
+</style>

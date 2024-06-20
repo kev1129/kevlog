@@ -5,10 +5,13 @@
     </div>
 </template>
 
+<script setup>
+</script>
+
 <style lang="scss" scoped>
 .header {
     font-size: 0.8rem;
-    opacity: 0.8;
+    opacity: 0.55;
 
     .header-title {
         position: fixed; 
