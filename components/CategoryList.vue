@@ -29,15 +29,17 @@ const props = defineProps(['categories'])
     .category-title {
         display: inline-block;
         font-size: 1rem;
-        padding-bottom: 6px;
-        margin-bottom: 4.5px;
+        padding-bottom: 9.3px;
+        margin-bottom: 9.1px;
         border-bottom: 0.8px solid rgb(200,200,200);
+        letter-spacing: 0.1rem;
     }
 
     .category-link {
         display: inline-block;
         margin-right: 25.7px;
         font-size: 0.7rem;
+        letter-spacing: 0.057rem;
 
     }
 

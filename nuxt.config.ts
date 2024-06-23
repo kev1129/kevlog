@@ -5,6 +5,22 @@ const { resolve } = createResolver(import.meta.url)
     
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'KV.log',
+      link: [
+        { rel: 'canonical', href: 'xxx'},
+        { rel: 'icon', type: 'image/x-icon', href: '/cube.webp' }
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width,initial-scale=1'},
+        { name: 'description', content: 'KV Blog'},
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
+      ],
+    }
+  },
   devtools: { enabled: true },
   ssr: true,
   modules: [
@@ -38,8 +54,10 @@ export default defineNuxtConfig({
 //  buildModules: ['@nuxtjs/vuetify'],
   googleFonts: {
     families: {
+      'Lato': true,
       'Noto+Sans+JP': true,
       'Roboto': true,
+      'Open Sans': true,
     },
   },
 })

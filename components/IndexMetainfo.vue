@@ -16,6 +16,7 @@ const props = defineProps(['indexvalue'])
     font-size: 0.7rem;
     opacity: 0.63;
     margin-bottom: -4.7px;
+    letter-spacing: 0.037rem;
 
     .index-date {
         display: inline;

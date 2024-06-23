@@ -24,6 +24,8 @@ const props = defineProps(['postlist'])
     .index-link {
         display: block;
         font-size: 1rem;
+        letter-spacing: 0.039rem;
+
 
         .index-title {
             display: inline-block;

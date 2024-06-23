@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <span class="header-title">kev.log</span>
+        <span class="header-title">KV.log</span>
         <NuxtLink to="/" class="header-home">Home</NuxtLink>
     </div>
 </template>

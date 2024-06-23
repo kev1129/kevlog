@@ -14,6 +14,8 @@ const props = defineProps(['title'])
     display: block;
     margin-bottom: 30px;
     font-size: 1.34rem;
+    letter-spacing: 0.036rem;
+
 }
 
 </style>
