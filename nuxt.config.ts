@@ -25,6 +25,7 @@ export default defineNuxtConfig({
   ssr: true,
   modules: [
     '@nuxt/content', 
+    'nuxt-content-assets',
     'nuxt-gtag', 
     "@nuxtjs/google-fonts",
     (_options, nuxt) => {

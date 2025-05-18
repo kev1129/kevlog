@@ -2,7 +2,7 @@
   <v-app>
     <AppHeader />
       <v-row>
-        <v-col xs="10" sm="9" md="7" lg="5" class="main-container">
+        <v-col class="main-container"> <!-- old setting xs="10" sm="9" md="7" lg="5" -->
           <v-main>
             <slot></slot>
           </v-main>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <CategoryList v-if="categories != 0" :categories="categories" />
-         <ErrorMessage  v-if="categories == 0" :errorMessage="errorCategories" />
+        <ErrorMessage  v-if="categories == 0" :errorMessage="errorCategories" />
     </div>
     <div>
         <PostList v-if="postList != 0" :postlist="postList" /> 
